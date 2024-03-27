@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek Detayı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .meal-detail {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .meal-detail img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .meal-detail h2 {
+            margin-top: 0;
+        }
+        .meal-detail p {
+            margin-bottom: 10px;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .comment-form button {
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+     @{
+        Layout = "~/Views/Shared/_Layout.cshtml"; // Layout dosyasını belirtiyoruz
+    }
+    
+    <div class="container">
+        <div class="meal-detail">
+            <img src="https://via.placeholder.com/300" alt="Yemek Fotoğrafı">
+            <h2>Yemek Adı</h2>
+            <p>Açıklama: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Fiyat: $9.99</p>
+            <div class="comment-section">
+                <h3>Yorumlar</h3>
+                <div class="comment">
+                    <p>Kullanıcı Adı: Yorum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <!-- Diğer yorumlar buraya eklenebilir -->
+                <form class="comment-form">
+                    <textarea placeholder="Yorumunuzu buraya yazın"></textarea>
+                    <button>Yorum Yap</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>
